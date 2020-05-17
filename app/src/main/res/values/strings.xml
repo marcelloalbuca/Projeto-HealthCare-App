@@ -1,3 +1,6 @@
 <resources>
-    <string name="app_name">ProjetoHealthCare</string>
+    <string name="app_name">HealthCare</string>
+    <string name="informe_se_sexo">Informe se sexo</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="nome">Nome</string>
 </resources>
