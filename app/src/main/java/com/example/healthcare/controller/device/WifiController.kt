@@ -2,7 +2,7 @@ package com.example.healthcare
 
 import android.content.Context
 import android.net.wifi.WifiManager
-import com.example.healthcare.IWifiController
+import com.example.healthcare.controller.IWifiController
 
 class WifiController
     (

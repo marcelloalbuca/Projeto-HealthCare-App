@@ -1,5 +1,7 @@
 package com.example.healthcare
 
+import com.example.healthcare.controller.IWifiController
+
 
 class LoginPresenter (
     private val view: View,
