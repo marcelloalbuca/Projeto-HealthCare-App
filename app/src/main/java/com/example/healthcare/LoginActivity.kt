@@ -1,12 +1,15 @@
 package com.example.healthcare
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.example.healthcare.WifiController
 
-class LoginActivity : AppCompatActivity(), LoginPresenter.View {
+class LoginActivity : AppCompatActivity(),
+    LoginPresenter.View {
 
     private lateinit var presenter: LoginPresenter
 
@@ -14,7 +17,11 @@ class LoginActivity : AppCompatActivity(), LoginPresenter.View {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        presenter = LoginPresenter(this)
+        presenter = LoginPresenter(
+            this,
+            WifiController(this),
+            DummyLoginController()
+        )
 
         val buttonLogin = findViewById<Button>(R.id.button_login)
 
@@ -35,5 +42,19 @@ class LoginActivity : AppCompatActivity(), LoginPresenter.View {
     override fun showEmptyInformationWarnning() {
         Toast.makeText(this, "Nome e Senha vazios", Toast.LENGTH_LONG).show()
     }
+
+    override fun showWifiDisabledWarning() {
+        Toast.makeText(this, "Wi-fi desconectada", Toast.LENGTH_LONG).show()
+    }
+
+    override fun showUnauthentedUser() {
+        Toast.makeText(this, "Crie sua conta", Toast.LENGTH_LONG).show()
+    }
+
+    override fun openHomeScreen() {
+        startActivity(Intent(this, MainActivity::class.java))
+    }
+
+
 
 }
