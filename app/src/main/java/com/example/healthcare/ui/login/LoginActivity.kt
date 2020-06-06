@@ -1,4 +1,4 @@
-package com.example.healthcare
+package com.example.healthcare.ui.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,10 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.example.healthcare.WifiController
+import com.example.healthcare.MainActivity
+import com.example.healthcare.R
+import com.example.healthcare.controller.device.WifiController
+import com.example.healthcare.controller.dummy.DummyLoginController
 
 class LoginActivity : AppCompatActivity(),
     LoginPresenter.View {

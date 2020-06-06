@@ -1,4 +1,4 @@
-package com.example.healthcare
+package com.example.healthcare.controller.device
 
 import android.content.Context
 import android.net.wifi.WifiManager

@@ -1,4 +1,6 @@
-package com.example.healthcare
+package com.example.healthcare.controller.dummy
+
+import com.example.healthcare.controller.ILoginController
 
 class DummyLoginController : ILoginController {
 

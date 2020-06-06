@@ -1,5 +1,6 @@
-package com.example.healthcare
+package com.example.healthcare.ui.login
 
+import com.example.healthcare.controller.ILoginController
 import com.example.healthcare.controller.IWifiController
 
 
