@@ -1,4 +1,4 @@
-package com.example.healthcare
+package com.example.healthcare.controller
 
 import javax.security.auth.callback.Callback
 
