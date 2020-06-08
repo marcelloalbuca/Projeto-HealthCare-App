@@ -1,15 +1,18 @@
 package com.example.healthcare.ui.login
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.Paint
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.healthcare.MainActivity
 import com.example.healthcare.R
 import com.example.healthcare.controller.device.WifiController
 import com.example.healthcare.controller.dummy.DummyLoginController
+import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity(),
     LoginPresenter.View {
@@ -19,6 +22,8 @@ class LoginActivity : AppCompatActivity(),
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        textView4.setPaintFlags(textView4.getPaintFlags() or Paint.UNDERLINE_TEXT_FLAG)
 
         presenter = LoginPresenter(
             this,
@@ -58,6 +63,9 @@ class LoginActivity : AppCompatActivity(),
         startActivity(Intent(this, MainActivity::class.java))
     }
 
+    fun callCadastro(view: View) {
+        startActivity(Intent(this, MainActivity::class.java))
+    }
 
 
 }
