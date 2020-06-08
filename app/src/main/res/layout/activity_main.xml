@@ -34,22 +34,22 @@
     <EditText
         android:id="@+id/nome"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="11dp"
         android:hint="Informe seu nome" />
 
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"
-            android:text="Endereço"
-            android:layout_marginBottom="1dp"/>
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:text="Sexo"
+         android:layout_marginBottom="1dp"/>
 
-    <EditText
-        android:id="@+id/endereco"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Informe seu endereço"
-        android:layout_marginBottom="11dp"/>
+         <EditText
+                android:id="@+id/sexo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/informe_se_sexo"
+                android:layout_marginBottom="11dp"/>
 
     <TextView
         android:layout_height="wrap_content"
@@ -66,11 +66,11 @@
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="CPF"
+        android:text="Telefone"
         android:layout_marginBottom="1dp"/>
 
     <EditText
-        android:id="@+id/cpf"
+        android:id="@+id/telefone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Informe seu CPF"
@@ -79,11 +79,11 @@
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:text="Telefone"
+        android:text="CPF"
         android:layout_marginBottom="1dp"/>
 
     <EditText
-        android:id="@+id/telefone"
+        android:id="@+id/cpf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Número de telefone"
@@ -102,24 +102,24 @@
         android:hint="Informe seu Email"
         android:layout_marginBottom="11dp"/>
 
-    <TextView
-        android:layout_height="wrap_content"
-        android:layout_width="match_parent"
-        android:text="Sexo"
-        android:layout_marginBottom="1dp"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="Senha"
+                android:layout_marginBottom="1dp"/>
 
-    <EditText
-        android:id="@+id/sexo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/informe_se_sexo"
-        android:layout_marginBottom="11dp"/>
+            <EditText
+                android:id="@+id/senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Informe uma senha"
+                android:layout_marginBottom="11dp"/>
 
         <Button
-            android:id="@+id/btn"
+            android:id="@+id/btnSalvar"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Enviar"/>
+            android:text="Salvar"/>
 
         </LinearLayout>
     </ScrollView>

@@ -35,8 +35,8 @@
         android:layout_width="267dp"
         android:layout_height="58dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Senha"
+        android:inputType="textPassword"
+        android:hint="Senha"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,23 +49,27 @@
         android:layout_height="18dp"
         android:layout_marginBottom="51dp"
         android:text="Esqueci minha senha"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.788" />
+        app:layout_constraintVertical_bias="0.776" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Criar minha conta"
+        android:gravity="center"
+        android:onClick="callCadastro"
+        android:textColor="#0000ff"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.78" />
+        app:layout_constraintVertical_bias="0.778"
+        tools:ignore="OnClick" />
 
     <Button
         android:id="@+id/button_login"
