@@ -62,6 +62,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Informe seu nascimento"
+        android:inputType="number"
         android:layout_marginBottom="11dp"/>
     <TextView
         android:layout_height="wrap_content"
@@ -73,7 +74,8 @@
         android:id="@+id/telefone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Informe seu CPF"
+        android:hint="Informe um telefone"
+        android:inputType="number"
         android:layout_marginBottom="11dp"/>
 
     <TextView
@@ -86,7 +88,8 @@
         android:id="@+id/cpf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Número de telefone"
+        android:hint="Número seu CPF"
+        android:inputType="number"
         android:layout_marginBottom="11dp"/>
 
     <TextView

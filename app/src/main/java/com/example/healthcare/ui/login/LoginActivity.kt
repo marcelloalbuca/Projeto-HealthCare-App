@@ -12,6 +12,7 @@ import com.example.healthcare.MainActivity
 import com.example.healthcare.R
 import com.example.healthcare.controller.device.WifiController
 import com.example.healthcare.controller.dummy.DummyLoginController
+import com.example.healthcare.ui.menu.MainMennu
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity(),
@@ -60,7 +61,7 @@ class LoginActivity : AppCompatActivity(),
     }
 
     override fun openHomeScreen() {
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, MainMennu::class.java))
     }
 
     fun callCadastro(view: View) {
