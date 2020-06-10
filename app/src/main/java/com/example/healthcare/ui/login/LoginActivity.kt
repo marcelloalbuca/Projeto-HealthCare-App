@@ -9,11 +9,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.healthcare.MainActivity
-<<<<<<< HEAD
-import com.example.healthcare.PedidoActivity
-=======
 import com.example.healthcare.MainActivity2
->>>>>>> 65173d77ee50d67c9694fe1ba1490aaa45b9ee47
 import com.example.healthcare.R
 import com.example.healthcare.controller.device.WifiController
 import com.example.healthcare.controller.dummy.DummyLoginController
@@ -67,11 +63,7 @@ class LoginActivity : AppCompatActivity(),
     }
 
     override fun openHomeScreen() {
-<<<<<<< HEAD
-        startActivity(Intent(this, PedidoActivity::class.java))
-=======
         startActivity(Intent(this, MainActivity2::class.java))
->>>>>>> 65173d77ee50d67c9694fe1ba1490aaa45b9ee47
     }
 
     fun callCadastro(view: View) {
