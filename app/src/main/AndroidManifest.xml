@@ -11,16 +11,18 @@
         android:roundIcon="@mipmap/logohc"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity2"
+            android:noHistory="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
         <activity android:name=".PedidoActivity"></activity>
         <activity android:name=".ui.login.LoginActivity"
             android:noHistory="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:exported="false"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".MainActivity" />
         <activity
             android:name=".ui.splash.SplashActivity"
             android:noHistory="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
