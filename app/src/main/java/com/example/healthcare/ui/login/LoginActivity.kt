@@ -31,6 +31,8 @@ class LoginActivity : AppCompatActivity(),
             DummyLoginController()
         )
 
+        presenter.init()
+
         val buttonLogin = findViewById<Button>(R.id.button_login)
 
         buttonLogin.setOnClickListener(){
