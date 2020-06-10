@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.healthcare">
-    
+
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
@@ -11,15 +11,19 @@
         android:roundIcon="@mipmap/logohc"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.login.LoginActivity"
+        <activity android:name=".MainActivity2"
+            android:noHistory="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:exported="false"
             android:noHistory="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:exported="false"/>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".MainActivity" />
         <activity
-            android:name="com.example.healthcare.ui.splash.SplashActivity"
+            android:name=".ui.splash.SplashActivity"
             android:noHistory="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
