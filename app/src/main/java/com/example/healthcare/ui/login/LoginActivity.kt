@@ -9,6 +9,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.healthcare.MainActivity
+import com.example.healthcare.PedidoActivity
 import com.example.healthcare.R
 import com.example.healthcare.controller.device.WifiController
 import com.example.healthcare.controller.dummy.DummyLoginController
@@ -60,7 +61,7 @@ class LoginActivity : AppCompatActivity(),
     }
 
     override fun openHomeScreen() {
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(this, PedidoActivity::class.java))
     }
 
     fun callCadastro(view: View) {

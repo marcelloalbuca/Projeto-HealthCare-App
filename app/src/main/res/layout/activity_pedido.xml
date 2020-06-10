@@ -6,5 +6,78 @@
     android:layout_height="match_parent"
     tools:context=".PedidoActivity">
 
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Pedido"
+                    android:layout_marginBottom="15dp"
+                    android:textAlignment="center"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Tipo de servço"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="1dp"/>
+
+                <EditText
+                    android:id="@+id/tipoServico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Informe o tipo do serviço"
+                    android:layout_marginBottom="11dp"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Endereço do serviço"
+                    android:layout_marginBottom="1dp"/>
+
+                <EditText
+                    android:id="@+id/enderecoServico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Informe o endereço do serviço"
+                    android:layout_marginBottom="11dp"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Valor do serviço"
+                    android:layout_marginBottom="1dp"/>
+
+                <EditText
+                    android:id="@+id/valorServico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Informe o valor do serviço"
+                    android:inputType="number"
+                    android:layout_marginBottom="11dp"/>
+
+                <Button
+                    android:id="@+id/btnEnviar"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Enviar"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
