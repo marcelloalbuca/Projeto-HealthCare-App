@@ -14,9 +14,8 @@
         <activity android:name=".MainActivity2"
             android:noHistory="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
-        <activity
-            android:name=".ui.login.LoginActivity"
-            android:exported="false"
+        <activity android:name=".PedidoActivity"></activity>
+        <activity android:name=".ui.login.LoginActivity"
             android:noHistory="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".MainActivity" />
