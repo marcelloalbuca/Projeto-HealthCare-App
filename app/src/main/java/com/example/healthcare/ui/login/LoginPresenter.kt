@@ -19,6 +19,12 @@ class LoginPresenter (
 
     }
 
+    fun init() {
+        if (loginController.hasUserLogged()){
+            view.openHomeScreen()
+        }
+    }
+
     fun onLoginClicked(){
         val userName = view.getUserName()
         val userPassword = view.getUserPassword()
@@ -40,5 +46,9 @@ class LoginPresenter (
                 view.showUnauthentedUser()
             }
         })
+
+
     }
+
+
 }

@@ -13,5 +13,9 @@ class DummyLoginController : ILoginController {
         }
     }
 
+    override fun hasUserLogged(): Boolean {
+        return false
+    }
+
 
 }
