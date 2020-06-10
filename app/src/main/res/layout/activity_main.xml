@@ -74,11 +74,7 @@
         android:id="@+id/telefone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-<<<<<<< Updated upstream
-        android:hint="Informe um telefone"
-=======
         android:hint="Informe seu Telefone"
->>>>>>> Stashed changes
         android:inputType="number"
         android:layout_marginBottom="11dp"/>
 
@@ -92,11 +88,7 @@
         android:id="@+id/cpf"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-<<<<<<< Updated upstream
-        android:hint="Número seu CPF"
-=======
         android:hint="Informe o número do CPF"
->>>>>>> Stashed changes
         android:inputType="number"
         android:layout_marginBottom="11dp"/>
 
