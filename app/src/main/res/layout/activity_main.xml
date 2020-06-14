@@ -35,8 +35,15 @@
         android:id="@+id/nome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="11dp"
-        android:hint="Informe seu nome" />
+        android:ems="10"
+        android:hint="Informe seu nome"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
          android:layout_height="wrap_content"
@@ -49,7 +56,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/informe_se_sexo"
-                android:layout_marginBottom="11dp"/>
+                android:layout_marginBottom="11dp"
+             android:inputType="textPersonName"
+             app:layout_constraintBottom_toBottomOf="parent"
+             app:layout_constraintEnd_toEndOf="parent"
+             app:layout_constraintStart_toStartOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             app:layout_constraintVertical_bias="0.433"
+             tools:ignore="MissingConstraints"/>
 
     <TextView
         android:layout_height="wrap_content"
@@ -63,7 +77,13 @@
         android:layout_height="wrap_content"
         android:hint="Informe seu nascimento"
         android:inputType="number"
-        android:layout_marginBottom="11dp"/>
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433"
+        tools:ignore="MissingConstraints"/>
     <TextView
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
@@ -76,7 +96,13 @@
         android:layout_height="wrap_content"
         android:hint="Informe seu Telefone"
         android:inputType="number"
-        android:layout_marginBottom="11dp"/>
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:layout_height="wrap_content"
@@ -90,7 +116,13 @@
         android:layout_height="wrap_content"
         android:hint="Informe o número do CPF"
         android:inputType="number"
-        android:layout_marginBottom="11dp"/>
+        android:layout_marginBottom="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433"
+        tools:ignore="MissingConstraints"/>
 
     <TextView
         android:layout_height="wrap_content"
@@ -103,7 +135,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Informe seu Email"
-        android:layout_marginBottom="11dp"/>
+        android:layout_marginBottom="11dp"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433"
+        tools:ignore="MissingConstraints"/>
 
             <TextView
                 android:layout_height="wrap_content"
@@ -116,7 +155,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Informe uma senha"
-                android:layout_marginBottom="11dp"/>
+                android:layout_marginBottom="11dp"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.433"
+                tools:ignore="MissingConstraints"/>
 
         <Button
             android:id="@+id/btnSalvar"
