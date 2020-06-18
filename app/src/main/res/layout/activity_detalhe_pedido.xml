@@ -7,7 +7,6 @@
     tools:context=".activity_detalhe_pedido">
 
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -26,23 +25,82 @@
                     android:id="@+id/text_criar_pedid"
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:text="Pedido"
+                    android:text="Detalhe do Pedido"
                     android:layout_marginBottom="15dp"
                     android:textAlignment="center"/>
 
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:text="Tipo de servço"
+                    android:text="CPF do Usuário"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="1dp"/>
 
                 <EditText
-                    android:id="@+id/tipoServico"
+                    android:id="@+id/cpfUsuario"
                     android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginBottom="11dp"
+                    android:background="@color/cardview_shadow_start_color"
+                    android:enabled="false"
+                    android:inputType="number" />
+
+                <TextView
                     android:layout_height="wrap_content"
-                    android:hint="Informe o tipo do serviço"
-                    android:layout_marginBottom="11dp"/>
+                    android:layout_width="match_parent"
+                    android:text="E-mail do Usuário"
+                    android:layout_marginBottom="1dp"/>
+
+                <EditText
+                    android:id="@+id/emailusuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginBottom="11dp"
+                    android:background="@color/cardview_shadow_start_color"
+                    android:enabled="false"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="CPF do enfermeiro"
+                    android:layout_marginBottom="1dp"/>
+
+                <EditText
+                    android:id="@+id/cpfEnfermeiro"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginBottom="11dp"
+                    android:background="@color/cardview_shadow_start_color"
+                    android:enabled="false"
+                    android:inputType="number"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="E-mail do enfermeiro"
+                    android:layout_marginBottom="1dp"/>
+
+                <EditText
+                    android:id="@+id/emailEnfermeiro"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginBottom="11dp"
+                    android:background="@color/cardview_shadow_start_color"
+                    android:enabled="false"/>
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:text="Tipo de serviço"
+                    android:layout_marginBottom="1dp"/>
+
+                <EditText
+                    android:id="@+id/tipodeServico"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginBottom="11dp"
+                    android:background="@color/cardview_shadow_start_color"
+                    android:enabled="false"/>
 
                 <TextView
                     android:layout_height="wrap_content"
@@ -51,32 +109,41 @@
                     android:layout_marginBottom="1dp"/>
 
                 <EditText
-                    android:id="@+id/enderecoServico"
+                    android:id="@+id/enderecodoServico"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Informe o endereço do serviço"
-                    android:layout_marginBottom="11dp"/>
+                    android:layout_height="41dp"
+                    android:layout_marginBottom="11dp"
+                    android:background="@color/cardview_shadow_start_color"
+                    android:enabled="false"/>
 
                 <TextView
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:text="Valor do serviço"
+                    android:text="valor do serviço"
                     android:layout_marginBottom="1dp"/>
 
                 <EditText
-                    android:id="@+id/valorServico"
+                    android:id="@+id/valordoServico"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Informe o valor do serviço"
-                    android:inputType="number"
-                    android:layout_marginBottom="11dp"/>
+                    android:layout_height="41dp"
+                    android:layout_marginBottom="11dp"
+                    android:background="@color/cardview_shadow_start_color"
+                    android:enabled="false"
+                    android:inputType="number"/>
 
-                <Button
-                    android:id="@+id/btnEnviar"
+                <TextView
+                    android:layout_height="wrap_content"
                     android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginTop="50dp"
-                    android:text="Enviar"/>
+                    android:text="Status do serviço"
+                    android:layout_marginBottom="1dp"/>
+
+                <EditText
+                    android:id="@+id/statusServico"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginBottom="11dp"
+                    android:background="@color/cardview_shadow_start_color"
+                    android:enabled="false"/>
 
             </LinearLayout>
         </ScrollView>
