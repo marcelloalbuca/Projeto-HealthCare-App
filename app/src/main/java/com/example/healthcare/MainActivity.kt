@@ -1,5 +1,6 @@
 package com.example.healthcare
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.Editable
 import android.widget.Button
@@ -7,6 +8,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.healthcare.ui.login.LoginActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,8 +35,7 @@ class MainActivity : AppCompatActivity() {
 
             if (nome.getText().toString().equals("") || nome.getText().toString() == null){
                 nome.setError("Favor informe o nome");
-            }else{
-                Toast.makeText(this,nome.text, Toast.LENGTH_LONG).show()
+
             }
             if (dataNascimento.getText().toString().equals("") || dataNascimento.getText().toString() == null){
                 dataNascimento.setError("Favor informe a Data de Nascimento");
@@ -61,6 +62,13 @@ class MainActivity : AppCompatActivity() {
             telefone.text = Editable.Factory.getInstance().newEditable("")
             sexo.text = Editable.Factory.getInstance().newEditable("")
             senha.text = Editable.Factory.getInstance().newEditable("")
+
+            //Mensagem de validação
+            Toast.makeText(this,"Cadastro efetuado com sucesso", Toast.LENGTH_LONG).show()
+
+            //Retornando para a tela Login
+            val intent = Intent(this,LoginActivity::class.java)
+              startActivity(intent)
 
         }
     }
